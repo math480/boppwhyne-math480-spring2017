@@ -1,0 +1,21 @@
+Favorite Theorem: (Cauchy's) Argument Principle
+
+1. Background:
+-Theorem dates back to the 19th century and has its roots in complex analysis.
+-One major result of complex analysis is the ability to evaluate line integrals in the real plane by taking them to the complex plane.
+
+2. Connection to me:
+-I personally find doing computations in the complex plane fun.
+-In high school (and perhaps even in college) we're told it's increasingly difficult if not downright impossible to find the roots of 
+polynomialsexceeding degree 3. While the argument principle does not necessarily find every root, it allows us to determine the general
+location of roots.
+
+3. Introduce the Residue Theorem.
+
+4. Introduce the Argument Principle and an abreviated proof.
+
+5. Example applying the argument principle on a polynomial.
+
+6. Real World Applications:
+-One application of the argument principle in in determining the stability of dynamic systems, especially functions modeling 
+time-dependance of a point in geometrical space.
