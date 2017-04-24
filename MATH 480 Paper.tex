@@ -1,0 +1,53 @@
+\documentclass[12pt, letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{ifpdf}
+\usepackage{mla}
+\usepackage{amsmath, amssymb}
+
+\begin{document}
+\begin{mla}{Alexander}{Bopp-Whyne}{DeMeo}{MATH 480}{24 April 2017}{Mathematics in Epidemiology}
+
+"Epidemiology is the study of the distribution and determinants of health-related states or events (including disease), and the application of this study to the control of diseases and other health problems" (World Health Organization). Today mathematics plays an integral role in Epidemiology. Statistical methods analyse target demographics, the Kermack-McKendrick model can determine whether an outbreak will simply die out or thrive within a population, and the mathematics behind mass vaccination can quantify how many people must be vaccinated to completely erase a disease or sickness from a population. Historically, however, mathematics saw little to no use in the field until the 19th century. 
+
+The fundamental principles driving the field of Epidemiology have existed since mid 400 BC. Considered the father of western medicine, Hippocrates of Kos (460-370 BC) is also considered the first Epidemiologist. He "sought a logic to sickness" and made clear the distinction between endemic, a disease residing within a population, and epidemic, a disease visiting upon a population (Boundless). Hippocrates believed an imbalance of the four Humors which made up the human body, air, earth, fire, and water, caused sickness; while other early philosophers labeled human luxury the culprit. In the 16th century Girolamo Fracastoro proposed a theory that microscopic organisms, unseeable to the human eye, were the true cause of sickness. He later wrote a book titled \textit{De contagione et contagiosis morbis}, promoting personal and environmental hygiene as methods of disease prevention. Fracastoreo's theory and book were widely ignored until the 17th century, in which Anton van Leeuwenhoek developed a microscope powerful enough to see microscopic organisms, providing visual evidence supporting Fracastoro's germ theory. At last, in the 19th century, epidemiologists began putting mathematical methods into practice. 
+
+One such epidemiologist is John Snow (1813-1858). Often considered the father of modern epidemiology, he's famous for discovering the cause of cholera outbreaks in London during 1854. Believing water pumps were causing the outbreak, on a city map he plotted the death of residents due to cholera relative to the location of water pumps within the city. Later, in the early 20th century, Anderson Gray McKendrick (1876-1943) played a significant role pioneering the use of mathematics in modern epidemiology. In 1911 he used the logistic equation to model bacterial growth data. He other published papers giving equations for the pure-birth process, a case of the birth-death process, and also pushed the use of differential equations for modelling and solving medical problems. In 1927, McKendrickone, along with William Ogilvy Kermack, composed the differential equations modelling the deterministic general epidemic; now known as the Kermack-McKendrick Model, a crucial tool still used in Epidemiology.
+
+The original Kermack-McKendrick model is quite basic and makes several general assumptions. The first assumption is the model only considers a completely fixed population (no one enters or leaves the population, and no one dies or gives birth) in which the entire population is equally susceptible to infection. The second assumption is that infection between individuals is instantaneous and has a negligible incubation period. Lastly the model assumes the duration of infection equals the duration the disease is present. The model itself consists of the following non-linear ordinary differential equations:
+
+\(dS(t)/dt = -\beta*S(t)*I(t)\)
+
+\(dI(t)/dt = \beta*S(t)*I(t) - \gamma*I(t)\)
+
+\(dR(t)/dt = \gamma*I(t)\)\linebreak Where \(t\) is time, \(S(t)\) is the number of susceptible people, \(I(t)\) is the number of infected people, \(R(t)\) is the number of people who recovered and developed immunity, and \(\beta\) and \(\gamma\) are the rates of infection and recovery respectively. The value determining how these equations act over time is denoted:
+
+\(R_o = (\beta/\gamma)*S(t)\)\linebreak Where \(R_o\) is the number of people infected by a single infected person. We then have the following cases:\linebreak \textbf{Case 1: Dying Out}
+
+If \(R_o < 1\), each infected individual is considered infecting less than one person. Solving the O.D.E. for \(I(t)\) will yield an exponential decay function. Hence the disease will die out.\linebreak \textbf{Case 2: Epidemic}
+
+If \(R_o > 1\), each infected individual is considered infecting more than one person. Solving the O.D.E. for \(I(t)\) will yield an exponential growth function. Hence the disease will likely spread throughout the entire population if left unchecked.\linebreak \textbf{Case 3: Endemic (Steady State)}
+
+If \(R_o=1\), each infected individual is considered infecting exactly one person. Solving the O.D.E. for \(I(t)\) will yield a constant. Hence the disease resides within the population without dying out or spreading.
+
+Today more complicated versions of Kermack-McKendrick model exist. The newer models better reflect the biology of specific infections and diseases  by using different equations for \(I(t)\) and \(R_o\), and making more precise assumptions about the population. 
+
+Other examples of mathematics in Epidemiology include mass vaccination. For any disease or infection, given \(R_o\) as previously defined in the Kermack-McKendrick model, the critical immunization threshold  \(q_c = 1 - 1/R_o\) tells us the minimum population which must immunized at birth to either eliminate (completely remove from a population) or eradicate (completely remove from every population) the infection or disease. This still sees use today in campaigns to eliminate diseases in third-world countries. Statistical analysis is another form of mathematics heavily used in Epidemiology. All findings relate to specific demographics, and analysing the statistical information from epidemiological investigations yields the results needed to make conclusions about the cause and effects of a disease or infection within the study population. 
+
+In conclusion, while fundamentals of Epidemiology have existed in many cultures for upwards of 2000 years, mathematics saw very little use in field for a majority of that time. Ultimately though, despite the use of mathematics being fairly recent, mathematics has none the less become a vital tool for the success of modern Epidemiologists. 
+
+\begin{workscited}
+
+\bibent Boundless. "History of Epidemiology." \textit{Boundless Microbiology Boundless}, 26 May. 2016. Web. 23 Apr. 2017 
+
+\bibent "Chapter 1. What Is Epidemiology?" \textit{The BMJ}. BMJ Publishing Group Ltd, n.d. Web. 23 Apr. 2017.
+
+\bibent Dowdle, Walter R. "The Principles of Disease Elimination and Eradication." \textit{Centers for Disease Control and Prevention}. Centers for Disease Control and Prevention, 3 Jan. 2000. Web. 23 Apr. 2017.
+
+\bibent "Mathematical Modelling of Infectious Disease." \textit{Wikipedia}. Wikimedia Foundation, 07 Apr. 2017. Web. 23 Apr. 2017.
+
+\bibent Weisstein, Eric W. "Kermack-McKendrick Model." \textit{MathWorld}. Wolfram Research, Inc., n.d. Web. 23 Apr. 2017.
+
+\end{workscited}
+\end{mla}
+\end{document}
